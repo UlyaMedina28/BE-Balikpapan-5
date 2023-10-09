@@ -14,9 +14,8 @@ app.use(cors());
 app.use(express.json());
 app.use(express.urlencoded({ extended: true }));
 
-app.use((req, res, next) => {
-  console.log(`Method: ${req.method} ${req.path}`);
-  next();
+app.get('/', (req, res) => {
+  res.sendFile(project-be-bookstore + '/views/index.html');
 });
 
 routes.forEach((route) => app.use(route));
