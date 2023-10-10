@@ -7,12 +7,15 @@ generator client {
 
 datasource db {
   provider = "mysql"
-  url      = env("DATABASE_URL")
+  url      = env("mysql://avnadmin:AVNS_-N8r4f8DsA_d7Dj5eyk@mysql-21a2997b-ulyakaiforever-0eb3.aivencloud.com:13839/defaultdb")
 }
 
 model Book {
   id Int @id @default(autoincrement())
-  createdAt DateTime @default(now())
+  name String
+  eMail String
   title String
-  author String
+  sum Int
+  address String
+  description String
 }
