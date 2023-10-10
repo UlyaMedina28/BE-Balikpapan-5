@@ -4,10 +4,10 @@ const mysql = require('mysql');
 const app = express();
 
 const db = mysql.createConnection({
-  host: 'localhost',
-  user: 'root',
-  password: 'P@ssw0rd!123',
-  database: 'be_balikpapan_4'
+  host: 'mysql-21a2997b-ulyakaiforever-0eb3.aivencloud.com',
+  user: 'avnadmin',
+  password: 'AVNS_-N8r4f8DsA_d7Dj5eyk',
+  database: 'defaultdb'
 });
 
 // Koneksi ke database
